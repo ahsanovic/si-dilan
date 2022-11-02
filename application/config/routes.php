@@ -7,6 +7,9 @@ $route['beranda'] = 'Beranda';
 /* setting */
 $route['setting'] = 'Setting';
 $route['setting/update'] = 'Setting/update';
+$route['tupoksi'] = 'Setting/tupoksi';
+$route['sotk'] = 'Setting/sotk';
+$route['wilker'] = 'Setting/wilker';
 
 /* penanganan jalan */
 $route['penanganan'] = 'Penanganan';

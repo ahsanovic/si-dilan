@@ -19,6 +19,36 @@ class Setting extends CI_Controller {
         $this->load->view('dist/_partials/footer');
     }
 
+    public function tupoksi()
+    {
+        $data['title'] = 'Tugas Pokok dan Fungsi';
+        $data['data'] = $this->setting_model->fetch_data();
+        $this->load->view('dist/_partials/header', $data);
+        $this->load->view('dist/_partials/navbar');
+        $this->load->view('tupoksi/index', $data);
+        $this->load->view('dist/_partials/footer');
+    }
+
+    public function sotk()
+    {
+        $data['title'] = 'SOTK';
+        $data['data'] = $this->setting_model->fetch_data();
+        $this->load->view('dist/_partials/header', $data);
+        $this->load->view('dist/_partials/navbar');
+        $this->load->view('sotk/index', $data);
+        $this->load->view('dist/_partials/footer');
+    }
+
+    public function wilker()
+    {
+        $data['title'] = 'Wilayah Kerja';
+        $data['data'] = $this->setting_model->fetch_data();
+        $this->load->view('dist/_partials/header', $data);
+        $this->load->view('dist/_partials/navbar');
+        $this->load->view('wilker/index', $data);
+        $this->load->view('dist/_partials/footer');
+    }
+
     private function _upload($name)
     {
         $config['upload_path'] = './public/image';
